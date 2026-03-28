@@ -1,0 +1,106 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    color: white;
+
+    /* Fondo animado */
+    background: linear-gradient(-45deg, #0A84FF, #32D74B, #5E5CE6, #00C7BE);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+/* Animación fondo */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Botones sociales */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.2);
+}
+
+/* Servicios */
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.service-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 220px;
+    text-align: center;
+
+    transition: 0.3s;
+
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Hover */
+.service-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Botón */
+.center {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: #0A84FF;
+}
